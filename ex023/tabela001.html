@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+        table {
+            width: 400px;
+            border-collapse: collapse;
+
+        }
+
+        tr.linha {
+            background-color: grey;
+        }
+
+        td.dado {
+            background-color: yellow;
+        }
+
+
+
+        td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Treinando tabelas</h1>
+    <!--
+        HIERARQUIA DAS TABELAS SIMPLES
+        TABLE
+            TABLE ROW
+                TABLE HEADER
+                TABLE DATA
+    -->
+    <table>
+        <tr>
+            <!--first row-->
+            <!--Data-->
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+
+        <tr>
+            <td>A2</td>
+            <td>B2</td>
+            <td>C2</td>
+        </tr>
+
+        <tr class="linha">
+            <td>A3</td>
+            <td>B3</td>
+            <td>C3</td>
+        </tr>
+
+        <tr>
+            <td class="dado">A4</td>
+            <td>B4</td>
+            <td>C4</td>
+
+        </tr>
+
+
+    </table>
+
+</body>
+
+</html>
