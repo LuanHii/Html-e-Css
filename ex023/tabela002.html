@@ -14,6 +14,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td,
@@ -21,6 +22,19 @@
             border: 1px solid black;
             padding: 7px;
 
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        thead>tr>th {
+            position: sticky;
+            top: 0;
+            background-color: gray;
         }
 
         thead,
@@ -32,6 +46,10 @@
         td.num {
             text-align: right;
 
+        }
+
+        tbody>tr:nth-child(2n) {
+            background-color: lightgrey;
         }
     </style>
 </head>
@@ -46,10 +64,11 @@
             TFOOT
         TR, TD, TH   -->
     <table>
+        <caption>População das unidades federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width:50px ;">População</th>
             </tr>
         </thead>
 
@@ -74,15 +93,99 @@
                 <td class="num">99,999,99</td>
             </tr>
 
+            <tr>
+                <td>Bahia</td>
+                <td class="num">99,999,99</td>
+            </tr>
+
+            <tr>
+                <td>Bahia</td>
+                <td class="num">99,999,99</td>
+            </tr>
+
+            <tr>
+                <td>Bahia</td>
+                <td class="num">99,999,99</td>
+            </tr>
+
+            <tr>
+                <td>São paulo</td>
+                <td class="num">45.919.049</td>
+            </tr>
+
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.160.791</td>
+            </tr>
+
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.943</td>
+            </tr>
+
+            <tr>
+                <td>São paulo</td>
+                <td class="num">45.919.049</td>
+            </tr>
+
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.160.791</td>
+            </tr>
+
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.943</td>
+            </tr>
+
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.943</td>
+            </tr>
+
+            <tr>
+                <td>São paulo</td>
+                <td class="num">45.919.049</td>
+            </tr>
+
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.160.791</td>
+            </tr>
+
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.943</td>
+            </tr>
+
+            <tr>
+                <td>Bahia</td>
+                <td class="num">99,999,99</td>
+            </tr>
+
+            <tr>
+                <td>Bahia</td>
+                <td class="num">99,999,99</td>
+            </tr>
+
+            <tr>
+                <td>São paulo</td>
+                <td class="num">45.919.049</td>
+            </tr>
+
+
+
         </tbody>
 
         <tfoot>
             <tr>
-                <th>Total de habitantes</th>
+                <th scope="row">Total de habitantes:</th>
                 <td class="num"><strong>843,447,83</strong></td>
             </tr>
         </tfoot>
     </table>
+
+
 
 </body>
 
